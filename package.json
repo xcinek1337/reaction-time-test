@@ -1,11 +1,12 @@
 {
-	"homepage": "https://xcinek1337.github.io/reaction-time",
+	"homepage": "http://xcinek1337.github.io/reaction-time",
 	"name": "reaction-time",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
-		"deploy": "gh-pages -d build",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d dist",
 		"dev": "vite",
 		"build": "tsc && vite build",
 		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
